@@ -110,7 +110,12 @@
               <input type="text" placeholder="Your Name" required />
               <input type="email" placeholder="Your Email" required />
             </div>
-            <input type="text" placeholder="Subject" required class="subject-inp"/>
+            <input
+              type="text"
+              placeholder="Subject"
+              required
+              class="subject-inp"
+            />
             <textarea placeholder="Your Message" required></textarea>
             <button type="submit">Send Message</button>
           </form>
@@ -127,20 +132,47 @@
       </section>
 
       <section id="signup">
-        <h2>Signup</h2>
-        <form>
-          <input type="text" placeholder="Username" required />
-          <input type="email" placeholder="Email" required />
-          <input type="password" placeholder="Password" required />
-          <input type="text" placeholder="CNIC" required />
-          <input type="text" placeholder="Phone Number" required />
-          <div>
-            <label>Gender:</label>
-            <input type="radio" name="gender" value="Male" /> Male
-            <input type="radio" name="gender" value="Female" /> Female
+        <h2>Sign Up</h2>
+        <form id="signup-form">
+          <div class="sign-form-group">
+            <input type="text" placeholder="Username" required />
+            <input type="email" placeholder="Email" required />
           </div>
-          <textarea placeholder="Address" required></textarea>
-          <input type="file" accept="image/*" />
+          <div class="sign-form-group">
+            <input type="password" placeholder="Password" required />
+            <input type="text" placeholder="CNIC" required />
+          </div>
+          <div class="sign-form-group">
+            <input type="text" placeholder="Phone Number" required />
+            <div class="gender-group">
+              <label>Gender:</label>
+              <input
+                type="radio"
+                name="gender"
+                value="Male"
+                id="male"
+                required
+              />
+              <label for="male">Male</label>
+              <input
+                type="radio"
+                name="gender"
+                value="Female"
+                id="female"
+                required
+              />
+              <label for="female">Female</label>
+            </div>
+          </div>
+          <textarea
+            placeholder="Address"
+            required
+            class="sign-up-text"
+          ></textarea>
+          <label class="files">
+            Choose File
+            <input type="file" accept="image/*" />
+          </label>
           <button type="submit">Signup</button>
         </form>
       </section>
