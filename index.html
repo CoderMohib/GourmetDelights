@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gourmet Delights</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      as="style"
+    />
+  </head>
+  <body>
+    <header class="header-sec">
+      <div class="logo">
+        <img src="./assets/g-foods.webp" alt="Gourmet Logo" />
+      </div>
+      <nav class="nav-bar">
+        <a href="#home" class="nav-item active">Home</a>
+        <a href="#menu" class="nav-item">Menu</a>
+        <a href="#about" class="nav-item">About us</a>
+        <a href="#contact" class="nav-item">Contact</a>
+        <a href="#signup" class="nav-item">Sign up</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="banner">
+        <div class="overlay">
+          <h1>Welcome to Gourmet Delights</h1>
+        </div>
+      </section>
+      <section id="about">
+        <h3>About Us</h3>
+        <div class="about-data">
+          <p>
+            Welcome to <strong>Gourmet Delights</strong>, where passion meets
+            flavor! We bring you a world of exquisite dishes crafted with the
+            finest ingredients. Whether you're dining in or ordering online, we
+            ensure a seamless and delightful culinary experience. Enjoy great
+            food, exceptional service, and a cozy ambiance. Join us for a taste
+            that lingers beyond the meal!
+            <a href="./pages/about.html" class="btn-about">Read More</a>
+          </p>
+
+          <video autoplay loop muted playsinline class="about-video">
+            <source src="assets/dishVideo.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </section>
+
+      <section id="menu">
+        <h2>Our Menu</h2>
+        <div class="menuContainer">
+          <div class="menuCard">
+            <div class="menucardImage">
+              <img src="assets/gulabjamun.jpg" alt="Gulab Jamun" />
+            </div>
+
+            <div class="menu-info">
+              <h3>Gulab Jamun</h3>
+              <p>
+                Soft, melt-in-your-mouth golden dumplings soaked in fragrant
+                sugar syrup.
+              </p>
+              <span>2000 PKR per Kg</span>
+            </div>
+          </div>
+          <div class="menuCard">
+            <div class="menucardImage">
+              <img src="assets/sohanHalwa.jpg" alt="Sohan Halwa" />
+            </div>
+            <div class="menu-info">
+              <h3>Sohan Halwa</h3>
+              <p>
+                A rich sweet made with flour, ghee, and nuts, infused with
+                saffron and cardamom.
+              </p>
+              <span>1500 PKR per Kg</span>
+            </div>
+          </div>
+          <div class="menuCard">
+            <div class="menucardImage">
+              <img src="assets/pateesa.jpg" alt="Pateesa" />
+            </div>
+            <div class="menu-info">
+              <h3>Pateesa</h3>
+              <p>
+                A crispy and flaky traditional sweet made from gram flour,
+                sugar, and ghee.
+              </p>
+              <span>1500 PKR per Kg</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2>Contact Us</h2>
+        <p>
+          We'd love to hear from you! Fill out the form below, and we'll get
+          back to you soon.
+        </p>
+
+        <div class="contact-container">
+          <form class="contact-form">
+            <div class="form-group">
+              <input type="text" placeholder="Your Name" required />
+              <input type="email" placeholder="Your Email" required />
+            </div>
+            <input type="text" placeholder="Subject" required class="subject-inp"/>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+          </form>
+
+          <div class="contact-info">
+            <span>Address:</span>
+            <p>Raiwind Lahore, Pakistan</p>
+            <span>Phone:</span>
+            <p>(+92) 324-421363</p>
+            <span>Email:</span>
+            <p>alimohib025@gmail.com</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="signup">
+        <h2>Signup</h2>
+        <form>
+          <input type="text" placeholder="Username" required />
+          <input type="email" placeholder="Email" required />
+          <input type="password" placeholder="Password" required />
+          <input type="text" placeholder="CNIC" required />
+          <input type="text" placeholder="Phone Number" required />
+          <div>
+            <label>Gender:</label>
+            <input type="radio" name="gender" value="Male" /> Male
+            <input type="radio" name="gender" value="Female" /> Female
+          </div>
+          <textarea placeholder="Address" required></textarea>
+          <input type="file" accept="image/*" />
+          <button type="submit">Signup</button>
+        </form>
+      </section>
+    </main>
+    <!-- Footer Section -->
+    <footer>
+      <div class="footer-container">
+        <p>&copy; 2025 Gourmet Delights. All rights reserved.</p>
+        <div class="social-links">
+          <a href="#">Facebook</a>
+          <a href="#">Instagram</a>
+          <a href="#">Twitter</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
