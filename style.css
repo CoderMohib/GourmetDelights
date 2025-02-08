@@ -77,14 +77,15 @@ main {
   animation: zoom-in 0.9s ease forwards;
 }
 .overlay {
-  min-width: 15rem;
-  width: 40rem;
+  max-width: 90%;
+  min-width: 12rem;
+  width: clamp(16rem, 50%, 40rem);
   background-color: rgb(255, 140, 0, 0.4);
-  font-size: x-large;
+  font-size: clamp(1rem, 2vw, 2rem);
   color: whitesmoke;
   border: 1px solid #ff8c00;
   border-radius: 30px;
-  padding: 0.6rem;
+  padding: clamp(0.5rem, 1vw, 1rem);
   text-align: center;
   transform: translateX(2rem);
   opacity: 0;
@@ -109,12 +110,14 @@ span {
 }
 .about-data {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 1.5rem;
 }
 .about-data p {
+  flex: 1 1 clamp(16rem, 40%, 40rem);
   font-weight: 400;
   font-size: 14px;
   color: #444;
@@ -125,7 +128,8 @@ span {
   animation-delay: 0.9s;
 }
 .about-video {
-  width: 100rem;
+  flex: 1 1 clamp(16rem, 40%, 40rem);
+  width: 100%;
   height: 300px;
   object-fit: cover;
   border-radius: 10px;
@@ -432,7 +436,13 @@ textarea:focus {
   background: #cc7000;
 }
 
-
+.icon{
+  display: none;
+  color: #ff8c00;
+  font-size: 1.7rem;
+  margin: 0.9rem 1.1rem 0 0;
+  cursor: pointer;
+}
 
 @keyframes zoom-in {
   100% {
@@ -443,5 +453,13 @@ textarea:focus {
   100% {
     transform: translateX(0);
     opacity: 1;
+  }
+}
+@media (max-width: 980px) {
+  .nav-bar{
+    display: none;
+  }
+  .icon{
+    display: block;
   }
 }
