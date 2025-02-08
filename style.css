@@ -58,7 +58,7 @@ body {
   color: #fff;
   background-color: #ff8c00;
 }
-.active {
+.active-sec {
   color: #fff;
   background-color: #ff8c00;
 }
@@ -498,6 +498,9 @@ textarea:focus {
     border-radius: 0;
   }
   .nav-item:hover{
+    background-color: #cc7000;
+  }
+  .active-sec{
     background-color: #cc7000;
   }
 }
